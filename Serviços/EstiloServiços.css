@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: poppinsregular;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgba(56, 40, 18, 0.205);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#title{
+    margin-left: 100px;
+    font-size: 35px;
+    flex-direction: column;
+    line-height: 5px;
+}
+
+li{
+    border: 3px solid rgb(92, 37, 5);
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    margin: 20px;
+}
+li:hover{
+    background-color: brown;
+    transition: 0.3s all;
+}
+
+h1{
+    font-weight: 2x;
+}
