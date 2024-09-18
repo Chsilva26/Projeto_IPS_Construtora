@@ -1,9 +1,12 @@
+html{
+    height: 500vh;
+}
 body{
     background-color: rgb(243, 242, 242);
     color: rgb(0, 0, 0);
     font-family: poppinsregular;
     width: 100%;
-    height: 100%;
+    
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -26,10 +29,17 @@ header{
 }
 
 header img{
+    margin-top: 10px;
+    margin-left: 20px;
     width: 20%;
+    background-color: rgb(50, 42, 165);
+    border: 20px;
+    border-radius: 50%;
+    
 }
 
 .banner{
+    margin: 0 auto;
     height: 100vh;
     width: 100%;
     background-image: url(/Assets/Imagens/Construção\ 2.jpg);
@@ -42,19 +52,28 @@ header img{
     align-items: center;
     justify-content: center;
 }
-
-.banner h1{
-    font-family: poppinsblack;
+.banner .titulo-inicio{
+    text-align: center;
+    width: 100%;
+    border: 500px;
+    background-color: rgba(53, 53, 53, 0.438);
+}
+.banner .titulo-inicio h1{
+    margin: 0 auto;
+    font-family: poppinslight;
     font-size: 500%;
     border: 0;
+}
+.banner titulo-inicio h2{
+    margin: 15px auto;
+    font-family: poppinslight;
 }
 .btn-contato{
     font-family: poppinsblack;
     font-size: 150%;
     color: black;
-    background-color: brown;
+    background-color: rgb(50, 42, 165);
     border-radius: 5px;
-    border: 200px;
 }
 #title{
     margin-left: 100px;
@@ -71,7 +90,7 @@ li{
     margin: 20px;
 }
 li:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(50, 42, 165);
     transition: 0.3s all;
 }
 
@@ -84,7 +103,7 @@ main{
     font-family: poppinglight;
     margin-top: 50px;
     display: flex;
-    flex-direction: row
+    flex-direction: column
 }
 
 h2{
@@ -94,14 +113,15 @@ h2{
 }
 
 span{
-    color: brown
+    color: rgb(50, 42, 165)
 }
 p{
     line-height: 20px;
     max-width: 500px;
 }
 
-aside{
+#sobre{
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -120,7 +140,7 @@ aside{
 
 #Comotrabalhamos h2 span{
     font-size: 40px;
-    color: brown;
+    color: rgb(50, 42, 165);
 }
 
 #divab{
@@ -130,5 +150,31 @@ aside{
 
 #ladoB{
     margin-left: 30px;
+    
+}
+
+#contato {
+    min-height: 100vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 45px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 2px;
+    font-family: poppinsregular;
+    
+}
+
+#contato .formulario{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 45px;
+    background-color: rgb(226, 226, 230);
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
     
 }

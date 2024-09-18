@@ -14,26 +14,30 @@
         <nav>
             <ul>
                 <a href="/Inicio/Inicio.html"><li>INICIO</li></a>
-                <a href=""><li>QUEM SOMOS</li></a>
-                <a href="/Serviços/Serviços.html"><li>SERVIÇOS</li></a>
+                <a href="#sobre"><li>QUEM SOMOS</li></a>
+                <a href="#"><li>SERVIÇOS</li></a>
             </ul>
         </nav>
 
         <div class="btn-contato">
-            <a href="#">CONTATO</a>
+            <a href="#contato">CONTATO</a>
         </div>
             
     </header>
     
     <section class="banner">
-        <h1>IPS Construtora</h1>
-        <h2><span>Gestão de Obras</span></h2>
-        <h2>Construção e Reforma</h2>
+        <div class="titulo-inicio">
+            <h1>IPS CONSTRUTORA</h1>
+            <h2><span>Gestão de Obras</span></h2>
+            <h2>Construção e Reforma</h2>    
+        </div>
+        
+        </div>
     </section>
 
     <main>
         <!--Subtitulo e texto-->
-    <aside>
+    <section id="sobre">
         <div id="gocr">
             <div id="subtitulo"><h2><span>Gestão de Obras</span></h2>
             <h2>Construção e Reforma</h2></div>
@@ -66,7 +70,22 @@
 
     </div>
     
-    </aside>
+    </section>
+
+    <section id="contato">
+        <div class="formulario">
+            <form>
+                <label for="Nome">Nome</label>
+                <input type="text" name="nNome">
+                <label for="Email">Email</label>
+                <input type="email" name="" id="">
+                <label for="Mensagem">Mensagem</label>
+                <textarea name="mensagem" id="" rows="10"></textarea>
+                <button class="env-btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
 
         
     
