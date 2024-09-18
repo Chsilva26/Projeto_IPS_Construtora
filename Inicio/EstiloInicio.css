@@ -33,7 +33,6 @@ header img{
     margin-left: 20px;
     width: 20%;
     background-color: rgb(50, 42, 165);
-    border: 20px;
     border-radius: 50%;
     
 }
@@ -72,8 +71,15 @@ header img{
     font-family: poppinsblack;
     font-size: 150%;
     color: black;
+}
+.btn-contato a{
+    color: black;
+    border: 20px;
     background-color: rgb(50, 42, 165);
-    border-radius: 5px;
+    border-radius: 10px;
+}
+.btn-contato a:hover{
+    background-color: rgb(216, 216, 216);
 }
 #title{
     margin-left: 100px;
@@ -83,21 +89,21 @@ header img{
 }
 
 li{
-    font-size: 150%;
+    font-size: 100%;
     padding: 5px;
     color: rgb(0, 0, 0);
     display: inline-block;
     margin: 20px;
 }
 li:hover{
-    color: rgb(50, 42, 165);
+    color: rgb(209, 209, 211);
     transition: 0.3s all;
 }
 
 h1{
-    
-font-weight: 200;
+    font-weight: 200;
 }
+    
 
 main{
     font-family: poppinglight;
@@ -121,17 +127,24 @@ p{
 }
 
 #sobre{
-    height: 100vh;
+    min-height: 100vh;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items:center;
-}
+    position: relative;
 
+}
+    
+
+#gocnt{
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+}
 #cnt{
     display: flex;
     flex-direction: column;
-    margin-left: 200px;
+    
 }
 
 #Comotrabalhamos h2{
@@ -153,28 +166,61 @@ p{
     
 }
 
-#contato {
+.carrossel{
+   margin: auto;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   font-family: poppinsregular;
+   font-size: 150%;
+}
+
+
+#servicos{
     min-height: 100vh;
-    align-items: center;
-    text-align: center;
+}
+
+#contato {
+    background-color: rgb(50, 42, 165);
+    width: 100%;
+    min-height: 100vh;
     justify-content: center;
-    padding: 10px 45px;
-    margin: 0;
+    align-items: center;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    max-width: 2px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: row;
     font-family: poppinsregular;
     
 }
 
 #contato .formulario{
-    display: flex;
-    flex-direction: column;
     padding: 10px 45px;
+    position: relative;
+    display: flex;
+    max-width: 200px;
+    flex-direction: column;
+    margin-right: 30px;
+    border-radius: 5px;
+    
     background-color: rgb(226, 226, 230);
-    text-align: center;
     justify-self: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
     
+}
+#contato h2{
+    font-size: 1em;
+}
+#contato .mapbox{
+    display: flex;
+    width: 650px;
+    min-height: 500px;
+    border: 0cap;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
 }
