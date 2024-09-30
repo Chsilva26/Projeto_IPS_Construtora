@@ -147,7 +147,7 @@ p{
 }
 #cnt{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     
 }
 
@@ -163,33 +163,76 @@ p{
 #divab{
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
-
+#divab img{
+    padding: 10px;
+}
+#ladoA{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 #ladoB{
-    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     
 }
 
-.carrossel{ 
+#sobre .carrossel{ 
+    align-items: center;
+    justify-content: center;
     margin: 10px 40px auto;
     align-items: center;
     display: flex;
     flex-direction: column;
     font-family: poppinsregular;
     font-size: 150%;
-    background-color: black;
+    background-color: rgb(43, 188, 255);
 }
 .carrossel .slide{
     max-width: 50px;
-    max-height: 350px;
-    background-color: black;
-align-items: center;
+    height: 250px;
+    background-color: rgb(5, 226, 255);
+    align-items: center;
     justify-content: center;
 }
 
 
 #servicos{
-    min-height: 100vh;
+     min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.icones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#servicos .icones .iconesE{
+    display: flex;
+    flex-direction: column;
+    
+}
+#servicos .icones img{
+    margin: 10px 10px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+#servicos .icones .iconesD{
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 
 #contato {
