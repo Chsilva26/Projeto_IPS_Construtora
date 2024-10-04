@@ -40,7 +40,7 @@ header img{
     
 }
 
-.banner{
+#banner{
     margin: 0 auto;
     height: 100vh;
     width: 100%;
@@ -54,19 +54,19 @@ header img{
     align-items: center;
     justify-content: center;
 }
-.banner .titulo-inicio{
+#banner .titulo-inicio{
     text-align: center;
     width: 100%;
     border: 500px;
     background-color: rgba(53, 53, 53, 0.438);
 }
-.banner .titulo-inicio h1{
+#banner .titulo-inicio h1{
     margin: 0 auto;
-    font-family: poppinslight;
+    font-family: poppinsblack;
     font-size: 500%;
     border: 0;
 }
-.banner titulo-inicio h2{
+#banner titulo-inicio h2{
     margin: 15px auto;
     font-family: poppinslight;
 }
