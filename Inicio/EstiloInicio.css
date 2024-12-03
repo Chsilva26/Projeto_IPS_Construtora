@@ -32,12 +32,8 @@ header{
 }
 
 header img{
-    margin-top: 10px;
+    height: 100px;
     margin-left: 20px;
-    width: 20%;
-    background-color: rgb(50, 42, 165);
-    border-radius: 50%;
-    
 }
 
 #banner{
@@ -195,35 +191,160 @@ p{
     font-family: poppinsregular;
 }
 
-.carrossel .slider{
-    width: 200px;
+#sobre .slider{
+    width: 300px;
     height: 350px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;;
 }
 
-
-#servicos{
-    min-height: 100vh;
+#sobre .slides{
+    width: 400%;
+    height: 350px;
     display: flex;
-    flex-direction: row;
-    position: relative;
-    align-items: center;
-
 }
-#servicos .carrossel{
-    font-family: poppinsregular;
+
+#sobre .slides input {
+    display: none;
+}
+
+#sobre .slide{
+    width: 25%;
+    position: relative;
+}
+
+#sobre .manual-navigation {
+    position: absolute;
+    width: 300px;
+    margin-top: -40px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;   
+}
+
+#sobre .manual-btn {
+    border: 2px solid rgb(50, 42, 165);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;   
+    transition: 0.5s;
+}
+
+#sobre .manual-btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+#sobre .manual-btn:hover{
+    background-color: #fff;
+}
+
+#sobre #radio1:checked ~ .first {
+    margin-left: 0;
+}
+#sobre #radio2:checked ~ .first {
+    margin-left: -25%;
+}
+#sobre #radio3:checked ~ .first {
+    margin-left: -50%;
+}
+#sobre #radio4:checked ~ .first {
+    margin-left: -75%;
+}
+#sobre .navigation-auto div{
+    border: 2px solid rgb(0, 132, 255);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5;
+}
+#sobre .navigation-auto{
+    position: absolute;
+    width: 300px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+#sobre .navigation-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+#servicos .carrossel{ 
     align-items: center;
     justify-content: center;
     margin: 50px;
+    font-family: poppinsregular;
 }
-#servicos .carrossel .slider{
+
+#servicos .slider{
+    width: 300px;
     height: 350px;
-    width: 200px;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;;
 }
+
+#servicos .slides{
+    width: 400%;
+    height: 350px;
+    display: flex;
+}
+
+#servicos .slides input {
+    display: none;
+}
+
+#servicos .slide{
+    width: 25%;
+    position: relative;
+}
+#servicos .manual-navigation {
+    position: absolute;
+    width: 300px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;   
+}
+
+#servicos .manual-btn {
+    border: 2px solid rgb(50, 42, 165);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;   
+    transition: 0.5s;
+}
+
+#servicos .manual-btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+#servicos .manual-btn:hover{
+    background-color: #fff;
+}
+
+#servicos #radio11:checked ~ .first {
+    margin-left: 0;
+}
+#servicos #radio22:checked ~ .first {
+    margin-left: -25%;
+}
+#servicos #radio33:checked ~ .first {
+    margin-left: -50%;
+}
+#servicos #radio44:checked ~ .first {
+    margin-left: -75%;
+}
+
+#servicos{
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    
+
+}
+
 .icones{
     display: flex;
     flex-direction: row;
