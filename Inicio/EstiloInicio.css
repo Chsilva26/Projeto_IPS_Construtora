@@ -137,7 +137,6 @@ p{
 
 }
     
-
 #gocnt{
     align-items:center;
     display: flex;
@@ -184,36 +183,36 @@ p{
     
 }
 
-#sobre .carrossel{ 
+.carrossel{ 
     align-items: center;
     justify-content: center;
     margin: 50px;
     font-family: poppinsregular;
 }
 
-#sobre .slider{
+.slider{
     width: 300px;
     height: 350px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;;
 }
 
-#sobre .slides{
+.slides{
     width: 400%;
     height: 350px;
     display: flex;
 }
 
-#sobre .slides input {
+.slides input {
     display: none;
 }
 
-#sobre .slide{
+.slide{
     width: 25%;
     position: relative;
 }
 
-#sobre .manual-navigation {
+.manual-navigation {
     position: absolute;
     width: 300px;
     margin-top: -40px;
@@ -221,7 +220,7 @@ p{
     justify-content: center;   
 }
 
-#sobre .manual-btn {
+.manual-btn, .navigation-auto div{
     border: 2px solid rgb(50, 42, 165);
     padding: 5px;
     border-radius: 10px;
@@ -229,153 +228,25 @@ p{
     transition: 0.5s;
 }
 
-#sobre .manual-btn:not(:last-child) {
+.manual-btn:not(:last-child), .navigation-auto div:not(:last-child){
     margin-right: 10px;
 }
 
-#sobre .manual-btn:hover{
-    background-color: #fff;
+.manual-btn:hover{
+    background-color: rgb(50, 42, 165);
 }
 
-#sobre .carrossel #radio1:checked ~ .first {
-    margin-left: 0;
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: rgb(50, 42, 165);
 }
-#sobre .carrossel #radio2:checked ~ .first {
-    margin-left: -25%;
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: rgb(50, 42, 165);
 }
-#sobre .carrossel #radio3:checked ~ .first {
-    margin-left: -50%;
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: rgb(50, 42, 165);
 }
-#sobre .carrossel #radio4:checked ~ .first {
-    margin-left: -75%;
-}
-#sobre .navigation-auto div{
-    border: 2px solid rgb(0, 132, 255);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5;
-}
-#sobre .navigation-auto{
-    position: absolute;
-    width: 300px;
-    margin-top: 310px;
-    display: flex;
-    justify-content: center;
-}
-
-#sobre .navigation-auto div:not(:last-child){
-    margin-right: 10px;
-}
-
-#sobre .carrossel #radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #fff;
-}
-#sobre .carrossel #radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #fff;
-}
-#sobre .carrossel #radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #fff;
-}
-#sobre .carrossel #radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #fff;
-}
-
-#servicos .carrossel{ 
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
-    font-family: poppinsregular;
-}
-
-#servicos .slider{
-    width: 300px;
-    height: 350px;
-    overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;;
-}
-
-#servicos .slides{
-    width: 400%;
-    height: 350px;
-    display: flex;
-}
-
-#servicos .slides input {
-    display: none;
-}
-
-#servicos .slide{
-    width: 25%;
-    position: relative;
-}
-#servicos .manual-navigation {
-    position: absolute;
-    width: 300px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;   
-}
-
-#servicos .manual-btn {
-    border: 2px solid rgb(50, 42, 165);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;   
-    transition: 0.5s;
-}
-
-#servicos .manual-btn:not(:last-child) {
-    margin-right: 10px;
-}
-
-#servicos .manual-btn:hover{
-    background-color: #fff;
-}
-
-#servicos .carrossel #radio1:checked ~ .first {
-    margin-left: 0;
-}
-#servicos .carrossel #radio2:checked ~ .first {
-    margin-left: -25%;
-}
-#servicos .carrossel #radio3:checked ~ .first {
-    margin-left: -50%;
-}
-#servicos .carrossel #radio4:checked ~ .first {
-    margin-left: -75%;
-}
-
-#servicos .navigation-auto div{
-    border: 2px solid rgb(0, 132, 255);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5;
-}
-#servicos .navigation-auto{
-    position: absolute;
-    width: 300px;
-    margin-top: 310px;
-    display: flex;
-    justify-content: center;
-}
-
-#servicos .navigation-auto div:not(:last-child){
-    margin-right: 10px;
-}
-
-#servicos .carrossel #radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #fff;
-}
-#servicos .carrossel #radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #fff;
-}
-#servicos .carrossel #radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #fff;
-}
-#servicos .carrossel #radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #fff;
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: rgb(50, 42, 165);
 }
 
 #servicos{
@@ -387,6 +258,7 @@ p{
     display: flex;
     flex-direction: row;
 }
+
 
 .icones{
     display: flex;
