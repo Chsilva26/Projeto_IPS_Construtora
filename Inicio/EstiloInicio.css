@@ -220,6 +220,7 @@ p{
     margin: 50px;
 }
 #servicos .carrossel .slider{
+    border: 5px rgb(50, 42, 165);
     background-color: black;
     height: 350px;
     width: 200px;
