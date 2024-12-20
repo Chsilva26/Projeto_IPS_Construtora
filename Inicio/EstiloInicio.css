@@ -201,6 +201,7 @@ p{
     width: 400%;
     height: 350px;
     display: flex;
+    transition: margin-lefs is ease;
 }
 
 .slides input {
@@ -210,6 +211,7 @@ p{
 .slide{
     width: 25%;
     position: relative;
+    transition: 1.5s;
 }
 
 .manual-navigation {
@@ -233,20 +235,67 @@ p{
 }
 
 .manual-btn:hover{
-    background-color: rgb(50, 42, 165);
+    background-color: rgb(255, 255, 255);
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: rgb(50, 42, 165);
+#slider1-radio1:checked ~ .first{
+    margin-left: 0;
 }
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: rgb(50, 42, 165);
+#slider1-radio2:checked ~ .first{
+    margin-left: -25%;
 }
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: rgb(50, 42, 165);
+#slider1-radio3:checked ~ .first{
+    margin-left: -50%;
 }
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: rgb(50, 42, 165);
+#slider1-radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+#slider2-radio1:checked ~ .first{
+    margin-left: 0;
+}
+#slider2-radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#slider2-radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#slider2-radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 300px;
+    margin-top: 310px;
+    display: flex;
+    justify-content: center
+    ;
+}
+
+#slider1-radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: rgb(255, 255, 255);
+}
+#slider1-radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: rgb(255, 255, 255);
+}
+#slider1-radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: rgb(255, 255, 255);
+}
+#slider1-radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: rgb(255, 255, 255);
+}
+#slider2-radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: rgb(255, 255, 255);
+}
+#slider2-radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: rgb(255, 255, 255);
+}
+#slider2-radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: rgb(255, 255, 255);
+}
+#slider2-radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: rgb(255, 255, 255);
 }
 
 #servicos{
