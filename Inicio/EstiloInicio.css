@@ -35,6 +35,7 @@ main{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 99999;
     transition: .5s;
 }
 
@@ -42,14 +43,23 @@ main{
     height: 100px;
     margin-left: 20px;
 }
+#header.rolagem img{
+    height: 70px;
+    margin-left: 15px;
+}
 
 #header.rolagem{
     background-color: black;
-    padding: 10px 10px;
+    padding: 0px 10px;
 }
 
 #header.rolagem li{
     color: #fff;
+    font-size: 100%;
+}
+#header.rolagem li:hover{
+    color: #ffffff8e;
+    font-size: 100%;
 }
 
 #banner{
@@ -92,6 +102,23 @@ main{
     font-family: poppinsblack;
     border-radius: 10px;
     font-size: 150%;
+}
+#header.rolagem .btn-contato button{
+    width: 130px;
+    height: 45px;
+    border: 0;
+    background-color: rgb(50, 42, 165);
+    color: #fff;
+    font-family: poppinsblack;
+    border-radius: 5px;
+    font-size: 100%;
+    transition: .2s;
+}
+
+#header.rolagem .btn-contato button:hover{
+    width: 135px;
+    height: 50px;
+    font-size: 105%;
 }
 .btn-contato a:hover{
     background-color: rgb(216, 216, 216);
@@ -199,14 +226,26 @@ p{
     
 }
 
-.carrossel{ 
+#carrossel1{ 
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    font-family: poppinsregular;
+}
+#carrossel2{ 
     align-items: center;
     justify-content: center;
     margin: 50px;
     font-family: poppinsregular;
 }
 
-.slider{
+#slider1{
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;;
+}
+#slider2{
     width: 300px;
     height: 350px;
     overflow: hidden;
@@ -320,19 +359,10 @@ p{
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
-    margin: 50px;
-}
-#servicos .carrossel .slider{
-    border: 5px rgb(50, 42, 165);
-    background-color: black;
-    height: 350px;
-    width: 200px;
-=======
     display: flex;
     flex-direction: row;
->>>>>>> 1125e66891704d9483b9d7e179e6da5c71a42e27
 }
+
 
 
 .icones{
