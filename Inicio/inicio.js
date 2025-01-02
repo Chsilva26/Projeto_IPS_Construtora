@@ -13,7 +13,7 @@ function nextImage1(){
 
     document.getElementById("slider1-radio"+cont1).checked = true;
 }
-/*let cont2 = 1; 
+let cont2 = 1; 
 document.getElementById("slider2-radio1").checked = true;
 
 setInterval(function() {
@@ -27,7 +27,7 @@ function nextImage2(){
     }
 
     document.getElementById("slider2-radio"+cont2).checked = true;
-}*/
+}
 
 window.addEventListener("scroll", function(){
     let header = this.document.querySelector('header')
