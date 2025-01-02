@@ -17,23 +17,39 @@ main{
     width: 100%;
     align-items: center;
 }
-header{
-    margin: 0 auto;
-    width: 90%;
-    min-height: 130 px;
+
+.container{
+    max-width: 1680px;
+    margin:0 auto;
+}
+
+.flex{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+}
+#header{
+    width: 100%;
+    padding: 60px 5px;
     font-family: poppinsblack;
     position: fixed;
     top: 0;
     left: 0;
+    transition: .5s;
 }
 
-header img{
+#header img{
     height: 100px;
     margin-left: 20px;
+}
+
+#header.rolagem{
+    background-color: black;
+    padding: 10px 10px;
+}
+
+#header.rolagem li{
+    color: #fff;
 }
 
 #banner{
@@ -54,7 +70,7 @@ header img{
     text-align: center;
     width: 100%;
     border: 500px;
-    background-color: rgba(53, 53, 53, 0.438);
+    background-color: rgba(1, 84, 161, 0.438);
 }
 #banner .titulo-inicio h1{
     margin: 0 auto;
@@ -66,16 +82,16 @@ header img{
     margin: 15px auto;
     font-family: poppinslight;
 }
-.btn-contato{
-    font-family: poppinsblack;
-    font-size: 150%;
-    color: black;
-}
-.btn-contato a{
-    color: black;
-    border: 20px;
+
+.btn-contato button{
+    width: 160px;
+    height: 60px;
+    border: 0;
     background-color: rgb(50, 42, 165);
+    color: #fff;
+    font-family: poppinsblack;
     border-radius: 10px;
+    font-size: 150%;
 }
 .btn-contato a:hover{
     background-color: rgb(216, 216, 216);
@@ -88,8 +104,8 @@ header img{
 }
 
 li{
-    font-size: 100%;
-    padding: 5px;
+    font-size: 150%;
+    margin: 0 20px;
     color: rgb(0, 0, 0);
     display: inline-block;
     margin: 2
