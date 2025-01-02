@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <a href="/Inicio/Inicio.html"><img src="/Assets/Imagens/icone.png" alt="" class="logo"></a>
+        <a href="/Inicio/Inicio.html"><img src="/Assets/Imagens/Novo log.png" alt="" class="logo"></a>
         
         <nav>
             <ul>
@@ -25,7 +25,7 @@
             
     </header>
     
-    <section class="banner">
+    <section id ="banner">
         <div class="titulo-inicio">
             <h1>IPS CONSTRUTORA</h1>
             <h2><span>Gestão de Obras</span></h2>
@@ -71,9 +71,12 @@
                     <h1>Porque a IPS?</h1>
                 </div>
                 <div class="slider">
-                    <div class="slide">
-                        <input type="radio" name="radio-btn" id="radio1">
-                        <input type="radio" name="radio-btn" id="radio2">
+                    <div class="slides">
+                        
+                        <input type="radio" name="radio-btn" id="slider1-radio1">
+                        <input type="radio" name="radio-btn" id="slider1-radio2">
+                        <input type="radio" name="radio-btn" id="slider1-radio3">
+                        <input type="radio" name="radio-btn" id="slider1-radio4">
 
                         <div class="slide first">
                             <img src="/Assets/Imagens/Slide 1.jpg" alt="imagem 1">
@@ -81,11 +84,25 @@
                         <div class="slide">
                             <img src="/Assets/Imagens/Slide 2.jpg" alt="imagem 2">
                         </div>
+                        <div class="slide">
+                            <img src="/Assets/Imagens/Slide 3.jpg" alt="imagem 3">
+                        </div>
+                        <div class="slide">
+                            <img src="/Assets/Imagens/Slide 4.jpg" alt="imagem 3">
+                        </div>
 
                         <div class="navigation-auto">
                             <div class="auto-btn1"></div>
                             <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
                         </div>
+                    </div>
+                    <div class="manual-navigation">
+                            <label for="slider1-radio1" class="manual-btn"></label>
+                            <label for="slider1-radio2" class="manual-btn"></label>
+                            <label for="slider1-radio3" class="manual-btn"></label>
+                            <label for="slider1-radio4" class="manual-btn"></label>
                     </div>
                 </div>
             </div>
@@ -95,25 +112,42 @@
             
         <section id="servicos">
             <div class="carrossel">
-                <div title="">
-                    <h1>Nossos Trabalhos</h1>
+                <div class="title">
+                    <h1>Nossos Serviços</h1>
                 </div>
                 <div class="slider">
-                    <div class="slide">
-                        <input type="radio" name="radio-btn" id="radio1">
-                        <input type="radio" name="radio-btn" id="radio2">
+                    <div class="slides">
+                        
+                        <input type="radio" name="radio-btn" id="slider2-radio1">
+                        <input type="radio" name="radio-btn" id="slider2-radio2">
+                        <input type="radio" name="radio-btn" id="slider2-radio3">
+                        <input type="radio" name="radio-btn" id="slider2-radio4">
 
-                        <div class="slide first"></div>
+                        <div class="slide first">
                             <img src="/Assets/Imagens/Slide 1.jpg" alt="imagem 1">
                         </div>
                         <div class="slide">
                             <img src="/Assets/Imagens/Slide 2.jpg" alt="imagem 2">
+                        </div>
+                        <div class="slide">
+                            <img src="/Assets/Imagens/Slide 3.jpg" alt="imagem 3">
+                        </div>
+                        <div class="slide">
+                            <img src="/Assets/Imagens/Slide 4.jpg" alt="imagem 3">
+                        </div>
 
                         <div class="navigation-auto">
                             <div class="auto-btn1"></div>
                             <div class="auto-btn2"></div>
-                        </div>    
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
                         </div>
+                    </div>
+                    <div class="manual-navigation">
+                            <label for="slider2-radio1" class="manual-btn"></label>
+                            <label for="slider2-radio2" class="manual-btn"></label>
+                            <label for="slider2-radio3" class="manual-btn"></label>
+                            <label for="slider2-radio4" class="manual-btn"></label>
                     </div>
                 </div>
             </div>
@@ -159,7 +193,9 @@
         </section>
 
     </main>
+    
     <footer id="footer"><p>Copyright &copy 2024</p></footer> 
   
+    <script src="inicio.js"></script>
 </body>
 </html>
