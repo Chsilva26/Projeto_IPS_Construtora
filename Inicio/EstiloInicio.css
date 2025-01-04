@@ -1,5 +1,5 @@
 html{
-    height: 500vh;
+    height: 330vh;
 }
 body{
     background-color: rgb(243, 242, 242);
@@ -80,7 +80,7 @@ main{
     text-align: center;
     width: 100%;
     border: 500px;
-    background-color: rgba(1, 84, 161, 0.438);
+    background-color: rgba(255, 255, 255, 0.438);
 }
 #banner .titulo-inicio h1{
     margin: 0 auto;
@@ -102,6 +102,17 @@ main{
     font-family: poppinsblack;
     border-radius: 10px;
     font-size: 150%;
+    transition: .1s;
+}
+.btn-contato button:hover{
+    width: 170px;
+    height: 70px;
+    border: 0;
+    background-color: rgb(50, 42, 165);
+    color: #e0e0e0;
+    font-family: poppinsblack;
+    border-radius: 10px;
+    font-size: 160%;
 }
 #header.rolagem .btn-contato button{
     width: 130px;
@@ -112,7 +123,7 @@ main{
     font-family: poppinsblack;
     border-radius: 5px;
     font-size: 100%;
-    transition: .2s;
+    transition: .1s;
 }
 
 #header.rolagem .btn-contato button:hover{
@@ -439,3 +450,59 @@ p{
     background-color: rgb(0, 0, 0);
     border-radius: 30px;
 }
+#footer{
+    height: 30vh;
+    width: 100%;
+    background-color: rgb(116, 116, 116);
+    font-family: poppinsregular;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#footer .content{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    font-family: poppinsregular;
+    text-align: center;
+    justify-content: center;
+}
+
+#footer h1{
+    padding:0px 150px;
+    font-size: 150%;
+    color: white;
+}
+#footer p{
+    font-size: 120%;
+}
+
+#footer img {
+    max-width: 30px;
+    max-width: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer .comandos {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+#footer .tel {
+    
+}
+
+#footer .cop{
+    text-align: center;
+    justify-content: center;
+}
+
