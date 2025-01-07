@@ -181,16 +181,23 @@ p{
 }
 
 #sobre{
-    margin: 0;
-    padding: 0;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: row;
-
 }
-    
+
+#sobre .subtitulos{
+    font-size: 150%;
+    line-height:px;
+    font-family: poppinsregular;
+}
+  
+#sobre .subtitulos p{
+    line-height: 30px;
+}
+
 #gocnt{
     align-items:center;
     display: flex;
@@ -408,11 +415,25 @@ p{
     background-size: cover;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     
 }
+
+#contato .atuacao{
+    font-family: poppinsblack;
+    max-width: 1280px;
+    color: #e0e0e0a2;
+    font-size: 150%;
+}
+
+#contato .atuacao h1{
+    font-family: poppinsregular;
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+
 .formulario{
     color: white;
 }
@@ -435,6 +456,10 @@ p{
 }
 #contato h2{
     font-size: 1em;
+}
+#contato .form_local{
+    display: flex;
+    flex-direction: row;
 }
 .mapbox{
     color: white;
@@ -466,18 +491,18 @@ p{
     width: 90%;
     display: flex;
     flex-direction: row;
-    font-family: poppinsregular;
+    font-family: poppinsblack;
     text-align: center;
     justify-content: center;
 }
 
 #footer h1{
     padding:0px 150px;
-    font-size: 150%;
+    font-size: 120%;
     color: white;
 }
-#footer p{
-    font-size: 120%;
+#footer .content p{
+    font-size: 100%;
 }
 
 #footer img {
@@ -487,7 +512,8 @@ p{
     margin-right: 10px;
 }
 
-#footer a {
+#footer .comandos li{
+    font-size: 100%;
     text-decoration: none;
     color: black;
 }
@@ -519,4 +545,14 @@ p{
 #whats img:hover{
     width: 60px;
     height: 60px;
+}
+
+.cop{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+.cop p{
+    padding: 0px 20px;
 }
