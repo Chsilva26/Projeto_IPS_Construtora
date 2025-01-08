@@ -478,7 +478,7 @@ p{
 #footer{
     height: 30vh;
     width: 100%;
-    background-color: rgb(116, 116, 116);
+    background-color: rgb(255, 255, 255);
     font-family: poppinsregular;
     text-align: center;
     justify-content: center;
@@ -489,6 +489,7 @@ p{
 
 #footer .content{
     width: 90%;
+    padding: 0px 50px;
     display: flex;
     flex-direction: row;
     font-family: poppinsblack;
@@ -497,9 +498,8 @@ p{
 }
 
 #footer h1{
-    padding:0px 150px;
     font-size: 120%;
-    color: white;
+    color: rgb(75, 75, 75);
 }
 #footer .content p{
     font-size: 100%;
