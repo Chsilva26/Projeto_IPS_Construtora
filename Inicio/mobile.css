@@ -1,0 +1,69 @@
+@media screen and (max-width: 760px){ 
+    #banner .titulo-inicio{
+        text-align: center;
+        width: 100%;
+        border: 500px;
+        background-color: rgba(255, 255, 255, 0.438);
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .flex li{
+        font-size: 100%;
+        margin:0 10px;
+    }
+
+    .btn-contato button{
+        width: 100px;
+        height: 30px;
+        font-size: 85%;
+    }
+
+    .btn-contato button:hover{
+        width: 105px;
+        height: 35px;
+        font-size: 90%;
+    }
+
+    #header img{
+        max-width: 30%;
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+    }
+
+    #header.rolagem li{    
+        font-size: 80%;
+        padding: 10px 0px;
+    }
+    #header.rolagem img{
+        width: auto;
+        height: auto;
+    }
+
+    #header.flex{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #header.rolagem.flex{
+        padding:10px 0px;
+    }
+
+    #header.rolagem.btn-contato button{
+        width: 100px;
+        height: 30px;
+        font-size: 85%;
+    }
+
+    #banner .titulo-inicio h1{
+        font-size: 200%;
+    }
+    #banner .titulo-inicio h2{
+        font-size: 100%;
+    }
+}
