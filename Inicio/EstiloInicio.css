@@ -26,10 +26,13 @@ main{
 }
 
 .flex{
+    padding: 0 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+
 #header{
     align-items: center;
     text-align: center;
@@ -43,8 +46,13 @@ main{
     transition: .5s;
 }
 
+#header-mobile{
+    display: none;
+}
+
 #header img{
     height: 100px;
+    vertical-align: middle;
 }
 #header.rolagem img{
     height: 70px;
@@ -147,7 +155,7 @@ li{
     font-size: 150%;
     color: rgb(0, 0, 0);
     display: inline-block;
-    margin:0 20px;
+    padding:0 20px;
 }
 li:hover{
     color: rgb(209, 209, 211);

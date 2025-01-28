@@ -1,18 +1,69 @@
 @media screen and (max-width: 760px){ 
+    #header{
+        display: none;
+    }
+    #header-mobile{
+        display:flex;
+        flex-direction: row;
+        position: fixed;
+        padding-top: 100px;
+        padding-left: 20px;
+        font-size: 50%;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        width: 100%;
+        font-family: poppinsblack;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+        transition: .5s;
+    }
+    #header-mobile img{
+        max-width: 50px;
+        margin: 0 auto;
+        vertical-align: middle;
+    }
+
+    #header-mobile a{
+        padding: 10px 0;
+    } 
+    
+    #header-mobile button{
+        text-decoration: none;
+        background-color: rgb(50, 42, 165);
+        font-family: poppinsblack;
+        color: white;
+        font-size: 200%;
+        width: 100px;
+        height: 110%;
+        border: none;
+        border-radius: 10px;
+    }
+
+    #header-mobile.rolagem{
+        display: none;
+    }
+
+    
+
     #banner .titulo-inicio{
         text-align: center;
         width: 100%;
         border: 500px;
         background-color: rgba(255, 255, 255, 0.438);
     }
+    
 
-    .flex{
+    
+    
+    /*.flex{
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    .flex li{
+    #header.flex li{
         font-size: 100%;
         margin:0 10px;
     }
@@ -38,11 +89,10 @@
 
     #header.rolagem li{    
         font-size: 80%;
-        padding: 10px 0px;
+        padding:10px 0;
     }
     #header.rolagem img{
-        width: auto;
-        height: auto;
+        display: none;
     }
 
     #header.flex{
@@ -50,20 +100,22 @@
         flex-direction: column;
     }
     
-    #header.rolagem.flex{
-        padding:10px 0px;
+    #header .rolagem .flex{
+        padding:5px 0px;
     }
 
-    #header.rolagem.btn-contato button{
-        width: 100px;
-        height: 30px;
-        font-size: 85%;
+    #header .rolagem .btn-contato button{
+        width: 1px;
+        height: 20px;
+        font-size: 10%;
+        background-color: aliceblue;
     }
-
+    */
     #banner .titulo-inicio h1{
         font-size: 200%;
     }
     #banner .titulo-inicio h2{
         font-size: 100%;
     }
+    
 }
