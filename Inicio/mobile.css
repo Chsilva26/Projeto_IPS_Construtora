@@ -1,4 +1,52 @@
 @media screen and (max-width: 760px){ 
+    #header{
+        display: none;
+    }
+    #header-mobile{
+        display:flex;
+        flex-direction: row;
+        position: fixed;
+        padding-top: 100px;
+        padding-left: 20px;
+        font-size: 50%;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        width: 100%;
+        font-family: poppinsblack;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+        transition: .5s;
+    }
+    #header-mobile img{
+        max-width: 50px;
+        margin: 0 auto;
+        vertical-align: middle;
+    }
+
+    #header-mobile a{
+        padding: 10px 0;
+    } 
+    
+    #header-mobile button{
+        text-decoration: none;
+        background-color: rgb(50, 42, 165);
+        font-family: poppinsblack;
+        color: white;
+        font-size: 200%;
+        width: 100px;
+        height: 110%;
+        border: none;
+        border-radius: 10px;
+    }
+
+    #header-mobile.rolagem{
+        display: none;
+    }
+
+    
+
     #banner .titulo-inicio{
         text-align: center;
         width: 100%;
@@ -8,60 +56,8 @@
     #header{
         display: none;
     }
-    /*.flex{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .flex li{
-        font-size: 100%;
-        margin:0 10px;
-    }
 
-    .btn-contato button{
-        width: 100px;
-        height: 30px;
-        font-size: 85%;
-    }
-
-    .btn-contato button:hover{
-        width: 105px;
-        height: 35px;
-        font-size: 90%;
-    }
-
-    #header img{
-        max-width: 30%;
-        margin: 0 auto;
-        width: auto;
-        height: auto;
-    }
-
-    #header.rolagem li{    
-        font-size: 80%;
-        padding: 10px 0px;
-    }
-    #header.rolagem img{
-        width: auto;
-        height: auto;
-    }
-
-    #header.flex{
-        display: flex;
-        flex-direction: column;
-    }
     
-    #header.rolagem.flex{
-        padding:10px 0px;
-    }
-
-    #header.rolagem.btn-contato button{
-        width: 100px;
-        height: 30px;
-        font-size: 85%;
-    }
-*/
     #header-mobile .container{
         max-width: 1680px;
         margin:0 auto;
@@ -95,10 +91,12 @@
     }
     
 
+
     #banner .titulo-inicio h1{
         font-size: 200%;
     }
     #banner .titulo-inicio h2{
         font-size: 100%;
     }
+    
 }
