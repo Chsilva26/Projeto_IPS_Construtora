@@ -19,6 +19,9 @@
         z-index: 99999;
         transition: .5s;
     }
+    #header-mobile .flex-mobile{
+        position: fixed;
+    }
     #header-mobile img{
         max-width: 50px;
         margin: 0 auto;
