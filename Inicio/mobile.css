@@ -1,11 +1,13 @@
 @media screen and (max-width: 760px){ 
+    html{
+        height: auto;
+    }
     #header{
         display: none;
     }
     #header-mobile{
         display:flex;
         flex-direction: row;
-        position: fixed;
         padding-top: 100px;
         padding-left: 20px;
         font-size: 50%;
@@ -19,9 +21,7 @@
         z-index: 99999;
         transition: .5s;
     }
-    #header-mobile .flex-mobile{
-        position: fixed;
-    }
+   
     #header-mobile img{
         max-width: 50px;
         margin: 0 auto;
@@ -99,6 +99,18 @@
     }
     #banner .titulo-inicio h2{
         font-size: 100%;
+    }
+
+    #sobre{
+        max-width: 760px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+    }
+
+    #sobre h2{
+        font-size: 120%
     }
     
 }

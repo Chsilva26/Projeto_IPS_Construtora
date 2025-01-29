@@ -188,7 +188,7 @@ h2{
 span{
     color: rgb(50, 42, 165)
 }
-p{
+#p{
     line-height: 20px;
     max-width: 500px;
 }
@@ -205,6 +205,8 @@ p{
     font-size: 150%;
     line-height:px;
     font-family: poppinsregular;
+    font-size: 100%;
+    padding: 20px;
 }
   
 #sobre .subtitulos p{
