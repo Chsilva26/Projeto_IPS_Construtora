@@ -1,11 +1,13 @@
 @media screen and (max-width: 760px){ 
+    html{
+        height: auto;
+    }
     #header{
         display: none;
     }
     #header-mobile{
         display:flex;
         flex-direction: row;
-        position: fixed;
         padding-top: 100px;
         padding-left: 20px;
         font-size: 50%;
@@ -19,6 +21,7 @@
         z-index: 99999;
         transition: .5s;
     }
+   
     #header-mobile img{
         max-width: 50px;
         margin: 0 auto;
@@ -53,69 +56,97 @@
         border: 500px;
         background-color: rgba(255, 255, 255, 0.438);
     }
+    #header{
+        display: none;
+    }
     
-
-    
-    
-    /*.flex{
-        display: flex;
-        flex-direction: column;
+    #header-mobile .container{
+        max-width: 1680px;
+        margin:0 auto;
         align-items: center;
         text-align: center;
     }
-    #header.flex li{
-        font-size: 100%;
-        margin:0 10px;
-    }
-
-    .btn-contato button{
-        width: 100px;
-        height: 30px;
-        font-size: 85%;
-    }
-
-    .btn-contato button:hover{
-        width: 105px;
-        height: 35px;
-        font-size: 90%;
-    }
-
-    #header img{
-        max-width: 30%;
-        margin: 0 auto;
-        width: auto;
-        height: auto;
-    }
-
-    #header.rolagem li{    
-        font-size: 80%;
-        padding:10px 0;
-    }
-    #header.rolagem img{
-        display: none;
-    }
-
-    #header.flex{
+    #header-mobile.flex{
         display: flex;
-        flex-direction: column;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #header-mobile{
+        display: contents;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding:10px 0;
+        font-family: poppinsblack;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+        transition: .5s;
+        font-size: 50%;
+    }
+
+    #header-mobile img{
+        max-width: 20px;
     }
     
-    #header .rolagem .flex{
-        padding:5px 0px;
-    }
 
-    #header .rolagem .btn-contato button{
-        width: 1px;
-        height: 20px;
-        font-size: 10%;
-        background-color: aliceblue;
-    }
-    */
+
     #banner .titulo-inicio h1{
         font-size: 200%;
     }
     #banner .titulo-inicio h2{
         font-size: 100%;
+        margin: 0 auto;
+        line-height: 5px;
+    }
+
+    #sobre{
+        min-height: 100vh;
+        max-width: 760px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        font-size: 80%;
+        padding: 0 30px;
+        color: white;
+    }
+
+    #sobre h2{
+        font-size: 150%;
+        line-height: 10px;
+    }
+
+    #sobre .subtitulos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #sobre .subtitulos p{
+        margin-top: 20px;
+        text-align: center;
+        line-height: 25px;
+        width: 350px;
+    }
+
+    #sobre span{
+        color: rgb(203, 202, 255);
+    }
+
+    #sobre .cnt h2{
+        font-size: 220%;
+    }
+
+    .divab{
+        flex-direction: column;
+    }
+    .divab img{
+        background-color: white;
+        border-radius: 20px;
+        margin: 10px;
     }
     
 }

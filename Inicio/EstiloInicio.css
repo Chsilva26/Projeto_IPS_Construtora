@@ -2,7 +2,7 @@ html{
     height: 330vh;
 }
 body{
-    background-image:linear-gradient(45deg, white, rgb(25, 0, 255));
+    background-image:linear-gradient(45deg, white, rgb(17, 0, 255));
     color: rgb(0, 0, 0);
     font-family: poppinsregular;
     width: 100%;
@@ -21,6 +21,7 @@ main{
 .container{
     max-width: 1680px;
     margin:0 auto;
+    padding: 0px 20px;
     align-items: center;
     text-align: center;
 }
@@ -30,6 +31,10 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#header-mobile{
+    display: none;
 }
 
 
@@ -93,13 +98,14 @@ main{
     background-color: rgba(255, 255, 255, 0.438);
 }
 #banner .titulo-inicio h1{
-    margin: 0 auto;
+    margin: 20px auto;
     font-family: poppinsblack;
     font-size: 500%;
     border: 0;
 }
-#banner titulo-inicio h2{
-    margin: 15px auto;
+#banner .titulo-inicio h2{
+    margin: 0 auto;
+    line-height: 5px;
     font-family: poppinslight;
 }
 
@@ -171,21 +177,19 @@ main{
     font-family: poppinglight;
     margin-top: 50px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
-h2{
+#sobre h2{
+    margin: 0 auto;
     font-size: 40px;
-    line-height: 10px;
+    line-height: 50px;
+    padding:30px 0;
     font-family: poppinsmedium;
 }
 
 span{
     color: rgb(50, 42, 165)
-}
-p{
-    line-height: 20px;
-    max-width: 500px;
 }
 
 #sobre{
@@ -194,16 +198,21 @@ p{
     justify-content: center;
     display: flex;
     flex-direction: row;
+    padding: 0 30px;
 }
 
 #sobre .subtitulos{
     font-size: 150%;
-    line-height:px;
+    line-height:0px;
     font-family: poppinsregular;
+    text-align: justify;
 }
   
 #sobre .subtitulos p{
-    line-height: 30px;
+    line-height: 25px;
+    padding: 0 auto;
+    margin: 0 auto;
+    
 }
 
 #gocnt{
@@ -211,38 +220,28 @@ p{
     display: flex;
     flex-direction: column;
 }
-#cnt{
+.cnt{
     display: flex;
     flex-direction: row;
-    
 }
 
-#Comotrabalhamos h2{
-    font-size: 40px;
-}
-
-#Comotrabalhamos h2 span{
-    font-size: 40px;
-    color: rgb(50, 42, 165);
-}
-
-#divab{
+.divab{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
 }
-#divab img{
+.divab img{
     padding: 10px;
 }
-#ladoA{
+.ladoA{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-#ladoB{
+.ladoB{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -255,13 +254,14 @@ p{
 #carrossel1{ 
     align-items: center;
     justify-content: center;
-    margin: 50px;
     font-family: poppinsregular;
+    padding: 0 40px;
+    
 }
 #carrossel2{ 
     align-items: center;
     justify-content: center;
-    margin: 50px;
+    padding: 0 40px;
     font-family: poppinsregular;
 }
 
@@ -269,13 +269,17 @@ p{
     width: 300px;
     height: 350px;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    border: solid rgba(255, 255, 255, 0.425);
+    border-radius: 10px;
 }
 #slider2{
     width: 300px;
     height: 350px;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    border: solid rgb(50, 42, 165);
+    border-radius: 10px;
 }
 
 .slides{
@@ -380,16 +384,13 @@ p{
 }
 
 #servicos{
-    margin: 0;
-    padding: 0;
+    padding: 0 30px;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: row;
 }
-
-
 
 .icones{
     display: flex;
@@ -500,7 +501,7 @@ p{
     padding: 0px 50px;
     display: flex;
     flex-direction: row;
-    font-family: poppinsblack;
+    font-family: poppinslight;
     text-align: center;
     justify-content: center;
 }
