@@ -149,4 +149,53 @@
         margin: 10px;
     }
     
+    #servicos{
+        display: none;
+    }
+
+    #servicos-mobile{
+        padding: 0 30px;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #servicos-mobile .icones {
+        padding: 0px 50px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #servicos-mobile .icones .iconesE{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #servicos-mobile .icones img{
+        max-width: 150px;
+        margin: 10px 10px;
+        padding: 5px 5px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 25px;
+        border: solid 1px;
+    }
+    #servicos-mobile .icones .iconesD{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contato .atuacao h1{
+        font-size: 100%;
+    }
+    #contato .atuacao p{
+        font-size: 70%;
+    }
+
+    #contato .form_local{
+        flex-direction: column;
+        text-align: center;
+    }
 }
