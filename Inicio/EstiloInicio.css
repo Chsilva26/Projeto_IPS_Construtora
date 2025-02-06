@@ -157,7 +157,7 @@ main{
     line-height: 5px;
 }
 
-li{
+#header li{
     font-size: 150%;
     color: rgb(0, 0, 0);
     display: inline-block;
