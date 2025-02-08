@@ -195,6 +195,7 @@ span{
 #sobre{
     min-height: 100vh;
     align-items: center;
+    max-width: 1680px;
     justify-content: center;
     display: flex;
     flex-direction: row;
@@ -384,6 +385,7 @@ span{
 }
 
 #servicos{
+    max-width: 1680px;
     padding: 0 30px;
     min-height: 100vh;
     align-items: center;
@@ -432,7 +434,7 @@ span{
 
 #contato .atuacao{
     font-family: poppinsblack;
-    max-width: 1280px;
+    max-width: 1680px;
     color: #e0e0e0a2;
     font-size: 150%;
 }
