@@ -526,8 +526,6 @@ span{
     border: solid 5px black;
     vertical-align: center;
     display: flex;
-    width: 650px;
-    min-height: 500px;
     border: 0cap;
     position: relative;
     align-items: center;
