@@ -7,7 +7,7 @@
     }
 
     #banner{
-        max-height: 100vh;
+       height: 100vh;
     }
     #banner #header-mobile{
         position:absolute;
@@ -157,7 +157,10 @@
         display: flex;
         flex-direction: column;
     }
-
+    #contato .atuacao{
+        margin: 0 20px;
+        justify-content: center;
+    }
     #contato .atuacao h1{
         font-size: 100%;
     }
@@ -166,7 +169,92 @@
     }
 
     #contato .form_local{
+        color: white;
+        display: flex;
         flex-direction: column;
         text-align: center;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+    }
+    
+    #contato .formulario{
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        display: block;
+    }
+
+    #contato .mapbox{
+        width: 100%;
+    }
+
+    #contato iframe{
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+    #contato .map{
+        padding: 0 auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+    }
+    #footer{
+        width: 100%; 
+        padding: 0 auto;
+        margin: 0 auto;
+    }
+    #footer .content{
+    width: 90%;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: row;
+    font-family: poppinslight;
+    text-align: center;
+    justify-content: center;
+    }
+
+    #footer h1{
+        font-size: 100%;
+        color: rgb(75, 75, 75);
+    }
+    #footer .content p{
+        font-size: 80%;
+    }
+
+    #footer img {
+        max-width: 20px;
+        max-width: 20px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    #footer .comandos li{
+        font-size: 80%;
+        text-decoration: none;
+        color: black;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #footer .comandos {
+        margin: 0 auto;
+        padding: 0 auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #footer .cop{
+       display: none;
+    }
+    #footer .cop-mobile{
+       display: contents;
+       font-size: 80%;
     }
 }

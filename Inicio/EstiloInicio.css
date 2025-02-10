@@ -421,13 +421,11 @@ span{
     background-color: rgb(50, 42, 165);
     font-family: poppinsregular;
     margin: 0 auto;
-    padding: 10px 40px;
     width: 100%;
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -436,6 +434,7 @@ span{
 }
 
 #contato .atuacao{
+    margin: 0 auto;
     font-family: poppinsregular;
     max-width: 1280px;
     color: #ffffff;
@@ -453,19 +452,20 @@ span{
     padding-right: 50px;
 }
 
-.formulario{
+#contato .formulario{
     color: rgb(255, 255, 255);
+    align-items: center;
+    text-align: center;
+
 }
 #contato .form{
     padding: 20px 45px;
-    position: relative;
+    margin: 0 40px;
     display: flex;
-    max-width: 200px;
     flex-direction: column;
-    margin-right: 30px;
+    width: 200px;
     border-radius: 5px;
     font-family: poppinslight;
-    
     color: black;
     background-color: rgb(255, 255, 255);
     justify-self: center;
@@ -521,27 +521,24 @@ span{
 }
 .mapbox{
     color: white;
+    margin-bottom: 20px;
 }
 #contato .map{
-    border: solid 5px black;
-    vertical-align: center;
+    margin: 0 auto;
     display: flex;
-    border: 0cap;
-    position: relative;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
 }
 
 #contato .map iframe{
     margin: 0 auto;
-    padding: 9 auto;
+    padding: 0 auto;
     border-radius: 10px;
     border: solid 5px black; 
     
 }
 #footer{
-    height: 30vh;
+    height: 0 auto;
     width: 100%;
     background-color: rgb(255, 255, 255);
     font-family: poppinsregular;
@@ -554,7 +551,7 @@ span{
 
 #footer .content{
     width: 90%;
-    padding: 0px 50px;
+    margin: 0 30px;
     display: flex;
     flex-direction: row;
     font-family: poppinslight;
@@ -594,6 +591,10 @@ span{
     justify-content: center;
 }
 
+#footer .cop-mobile{
+    display: none;
+}
+
 #whats img{
     position: fixed;
     bottom: 60px;
@@ -615,6 +616,7 @@ span{
     margin-bottom: 10px;
     margin-left: 60px;
 }
+
 .cop p{
     padding: 0px 20px;
 }
