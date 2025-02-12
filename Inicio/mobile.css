@@ -7,7 +7,12 @@
     }
 
     #banner{
-       height: 100vh;
+        height: 120vh;
+    }
+
+    #banner .flex-mobile{
+        margin: 0 auto;
+        justify-content: center;
     }
     #banner #header-mobile{
         position:absolute;
@@ -21,22 +26,28 @@
         transition: .5s;
         top: 0;
     }
-   
+    #banner #header-mobile nav{
+        text-decoration: none;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
     #banner #header-mobile img{
         max-width: 70px;
+        align-items: center;
+        justify-content: center;
         margin: 0 auto;
-        padding: 0 auto;
-    }
+        margin-left: 28%;
+   }
 
     #banner #header-mobile li{
         display: flex;
         color: black;
+        text-align: center;
+        justify-content: center;
+        margin: 10px 0;
     }
 
-
-    #banner #header-mobile a{
-        text-decoration: none;
-    }
     
     #banner #header-mobile button{
         text-decoration: none;
@@ -86,8 +97,16 @@
         color: white;
     }
 
+    #sobre .title h2{
+        font-size: 220%;
+    }
+
     #sobre h2{
         font-size: 150%;
+        line-height: 10px;
+    }
+    #sobre h1{
+        font-size: 00%;
         line-height: 10px;
     }
 
@@ -125,12 +144,22 @@
     }
 
     #servicos-mobile{
+        font-family: poppinsregular;
         padding: 0 30px;
         min-height: 100vh;
         align-items: center;
         justify-content: center;
         display: flex;
         flex-direction: column;
+    }
+    
+    #servicos-mobile h1{
+        font-size: 200%;
+        color: white;
+    }
+
+    #servicos-mobile span{
+        color: rgb(40, 40, 119);
     }
     
     #servicos-mobile .icones {
@@ -254,7 +283,10 @@
        display: none;
     }
     #footer .cop-mobile{
+        margin: 0 auto;
+        padding: 0 auto;
        display: contents;
        font-size: 80%;
     }
+    
 }
