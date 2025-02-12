@@ -157,7 +157,7 @@ main{
     line-height: 5px;
 }
 
-li{
+#header li{
     font-size: 150%;
     color: rgb(0, 0, 0);
     display: inline-block;
@@ -384,6 +384,10 @@ span{
     background-color: rgb(255, 255, 255);
 }
 
+#servicos-mobile{
+    display: none;
+}
+
 #servicos{
     max-width: 1680px;
     padding: 0 30px;
@@ -424,7 +428,6 @@ span{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -436,7 +439,12 @@ span{
     font-family: poppinsblack;
     max-width: 1680px;
     color: #e0e0e0a2;
+    margin: 0 auto;
+    font-family: poppinsregular;
+    max-width: 1280px;
+    color: #ffffff;
     font-size: 150%;
+    
 }
 
 #contato .atuacao h1{
@@ -445,26 +453,70 @@ span{
     color: rgb(255, 255, 255);
 }
 
-.formulario{
-    color: white;
+#contato .atuacao p{
+    padding-right: 50px;
+}
+
+#contato .formulario{
+    color: rgb(255, 255, 255);
+    align-items: center;
+    text-align: center;
+
 }
 #contato .form{
     padding: 20px 45px;
-    position: relative;
+    margin: 0 40px;
     display: flex;
-    max-width: 200px;
     flex-direction: column;
-    margin-right: 30px;
+    width: 200px;
     border-radius: 5px;
     font-family: poppinslight;
-    
     color: black;
-    background-color: rgb(226, 226, 230);
+    background-color: rgb(255, 255, 255);
     justify-self: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
     
 }
+#contato .form input{
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: poppinsregular;
+    border: none;
+    border-bottom: solid 1.5px rgb(50, 42, 165);
+    width: 100%;
+}
+
+#contato .form label{
+    font-family: poppinsregular;
+}
+
+#contato .form .msg{
+    margin-top: 10px;
+}
+
+#contato .form textarea{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: solid 1.5px rgb(50, 42, 165);
+    font-family: poppinsregular;
+}
+
+#contato .form button{
+    color: white;
+    border: none;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(50, 42, 165);
+    border-radius: 5px;
+    transform: 0.5;
+}
+
+#contato .form button:hover{
+    background-color: rgb(99, 95, 151);
+}
+
 #contato h2{
     font-size: 1em;
 }
@@ -474,20 +526,24 @@ span{
 }
 .mapbox{
     color: white;
+    margin-bottom: 20px;
 }
 #contato .map{
+    margin: 0 auto;
     display: flex;
-    width: 650px;
-    min-height: 500px;
-    border: 0cap;
-    position: relative;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: rgb(0, 0, 0);
-    border-radius: 30px;
+}
+
+#contato .map iframe{
+    margin: 0 auto;
+    padding: 0 auto;
+    border-radius: 10px;
+    border: solid 5px black; 
+    
 }
 #footer{
-    height: 30vh;
+    height: 0 auto;
     width: 100%;
     background-color: rgb(255, 255, 255);
     font-family: poppinsregular;
@@ -500,7 +556,7 @@ span{
 
 #footer .content{
     width: 90%;
-    padding: 0px 50px;
+    margin: 0 30px;
     display: flex;
     flex-direction: row;
     font-family: poppinslight;
@@ -540,6 +596,10 @@ span{
     justify-content: center;
 }
 
+#footer .cop-mobile{
+    display: none;
+}
+
 #whats img{
     position: fixed;
     bottom: 60px;
@@ -561,6 +621,7 @@ span{
     margin-bottom: 10px;
     margin-left: 60px;
 }
+
 .cop p{
     padding: 0px 20px;
 }

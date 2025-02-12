@@ -30,20 +30,25 @@
 
         </div>
     </header>
-    <header id="header-mobile"> 
-        <div class="flex-mobile">
-            <a href="/Inicio/Inicio.html"><img src="/Assets/Imagens/Projeto Logo.png" alt="" class="logo"></a>
-            <a href="/Inicio/Inicio.html"><li>INICIO</li></a>
-            <a href="#sobre"><li>QUEM SOMOS</li></a>
-            <a href="#servicos"><li>SERVIÇOS</li></a>
-            <div>
-                <a href="#contato"><button>CONTATO</button></a>
-            </div>
-
-        </div>
-    </header>
+    
     
     <section id ="banner">
+        <header id="header-mobile"> 
+            <div class="flex-mobile">
+                <nav>
+                    <ul>
+                        <a href="/Inicio/Inicio.html"><img src="/Assets/Imagens/Projeto Logo.png" alt="" class="logo"></a>
+                        <a href="/Inicio/Inicio.html"><li>INICIO</li></a>
+                        <a href="#sobre"><li>QUEM SOMOS</li></a>
+                        <a href="#servicos"><li>SERVIÇOS</li></a>
+                    </ul>
+                </nav>
+                
+                <div>
+                    <a href="#contato"><button>CONTATO</button></a>
+                </div>
+            </div>
+        </header>
         <div class="titulo-inicio">
             <h1>IPS CONSTRUTORA</h1>
             <h2>
@@ -191,11 +196,69 @@
                 </div>
             </div>
         </section>
+        <section id="servicos-mobile">
+            <div class="title">
+                <h1>Nossos <span>Serviços</span></h1>
+            </div>
+            <div class="icones">
+                <div class="iconesE">
+                    <img src="/Assets/Imagens/gestao-dobras.png" alt="">
+                    <img src="/Assets/Imagens/exe-obras.png" alt="">
+                    <img src="/Assets/Imagens/impermeabilização.png" alt="">
+                    <img src="/Assets/Imagens/eletrica.png" alt="">
+                </div>
+                <div class="iconesD">
+                    <img src="/Assets/Imagens/hidraulica.png" alt="">
+                    <img src="/Assets/Imagens/Reforma.png" alt="">
+                    <img src="/Assets/Imagens/Pintura.png" alt="">
+                    <img src="/Assets/Imagens/obras-infra.png" alt="">
+                </div>
+            </div>
+            
+            <div class="carrossel" id="carrossel2">
+                
+                <div class="slider" id="slider2">
+                    <div class="slides">
+                        
+                        <input type="radio" name="radio-btn" id="slider2-radio1">
+                        <input type="radio" name="radio-btn" id="slider2-radio2">
+                        <input type="radio" name="radio-btn" id="slider2-radio3">
+                        <input type="radio" name="radio-btn" id="slider2-radio4">
+
+                        <div class="slide first">
+                            <img src="/Assets/Imagens/Slide 4.jpg" alt="imagem 1">
+                        </div>
+                        <div class="slide">
+                            <img src="/Assets/Imagens/Slide 3.jpg" alt="imagem 2">
+                        </div>
+                        <div class="slide">
+                            <img src="/Assets/Imagens/Slide 2.jpg" alt="imagem 3">
+                        </div>
+                        <div class="slide">
+                            <img src="/Assets/Imagens/Slide 1.jpg" alt="imagem 3">
+                        </div>
+
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    </div>
+                    <div class="manual-navigation">
+                            <label for="slider2-radio1" class="manual-btn"></label>
+                            <label for="slider2-radio2" class="manual-btn"></label>
+                            <label for="slider2-radio3" class="manual-btn"></label>
+                            <label for="slider2-radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section id="contato">
             <div class="atuacao">
                 <h1>Nossa área de Atuação</h1>
-                    A área de atuação da nossa construtora abrange a Grande São Paulo e o interior do estado, oferecendo soluções 
+                    <p>A área de atuação da nossa construtora abrange a Grande São Paulo e o interior do estado, oferecendo soluções 
                     inovadoras e de alta qualidade para diversos tipos de projetos. Com uma vasta experiência e expertise, atendemos 
                     tanto a capital quanto as regiões do interior, proporcionando construções residenciais, comerciais e industriais 
                     com excelência. Nosso compromisso é entregar obras que atendam às necessidades específicas de cada cliente, sempre 
@@ -204,23 +267,21 @@
             </div>
             <div class="form_local">
                 <div class="formulario">
-                    <h2>Entre em contato:</h2>
+                    <h1>Entre em contato:</h1>
                     <div class="form">
                         <form method="post" action="envia.php">
-                            <label for="Nome">Nome</label>
-                            <input type="text" name="nome">
-                            <label for="Email">Email</label>
-                            <input type="email" name="email" id="">
-                            <label for="Mensagem">Mensagem</label>
-                            <textarea name="mensagem" id="" rows="10"></textarea>
+                            <input type="text" name="nome" placeholder="Digite seu nome">
+                            <input type="email" name="email" id="" placeholder="Digite seu email">
+                            <textarea name="mensagem" id="" rows="10" placeholder="Deixe aqui sua mensagem"></textarea>
                             <button class="env-btn">Enviar</button>
                         </form>
                     </div>
                 </div>
                 
                 <div class="mapbox">
-                    <h2>Nossa Localização:</h2>
+                    
                     <div class="map">
+                        <h1>Nossa Localização</h1>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14642.622685732347!2d-46.79927158869097!3d-23.43680242680337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefd02fc70c285%3A0xc9e7b85ce5422b6!2sMorro%20Doce%20-%20Anhanguera%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1726666793262!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
@@ -248,6 +309,10 @@
                 </div>
             </div>
             <div class="cop">
+                <p>Todos os Direitos Reservados | IPS Construtora 2025 </p>
+                <p>Desenvolvido por <a href="https://w.app/U7fKwy">Chsilvadev</a></p>
+            </div>
+            <div class="cop-mobile">
                 <p>Todos os Direitos Reservados | IPS Construtora 2025 </p>
                 <p>Desenvolvido por <a href="https://w.app/U7fKwy">Chsilvadev</a></p>
             </div>
